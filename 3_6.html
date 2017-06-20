@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+			body{
+				background-color: #FFDC73;
+			}
+		#header{
+			height: 120px;
+			background-color: #740001;
+			margin-bottom: 5px;
+			color: #D3A625;
+			width: 70%;
+			margin-left: auto;
+  			margin-right: 0;
+  			text-align: center;
+		
+		}
+		#mainDiv1{
+			background-color: #87C878;
+			width: 30%;
+			float: left;
+		}
+		#mainDiv2{
+			width: 70%;
+			position: relative;
+			display: flex;
+			margin-left: auto;
+  			margin-right: 0;
+  			background-color: #D3A625;
+		}
+		#content1{
+			background-color: #D3A625;
+			 margin: auto; 
+			 text-align: justify;
+			 color: #740001;
+			 float: right;
+			 padding: 10px;
+		}
+		#content2{
+			text-align: justify;
+			background-color: #87C878;
+			padding: 10px;
+		}
+		#footer{
+			height: 120px;
+			background-color: #AE0001;
+			margin-top: 5px;
+			width: 70%;
+			margin-right: auto;
+			margin-left: 0;
+		}
+	</style>
+</head>
+<body>
+<div id="header"> 
+<h1>Как выровнять слой по центру веб-страницы?</h1>
+</div>
+<div id="mainDiv1">
+	<p>Длинная эпопея с написанием статьи о свойстве "float" завершена. Пусть времени ушло много, но мне думается, что мне удалось максимально доходчиво свести все многообразие поведений этого мощного и несколько странного свойства в одну общую систему.</p>
+</div>
+<div id="mainDiv2">
+	<div id="content1">
+		По умолчанию ширина блочного элемента принимает значение auto, и он, как правило, занимает всю доступную ширину. Поэтому описанным методом по центру можно выровнять только такой элемент, у которого явно задана ширина в процентах или пикселах. После чего к стилю слоя следует добавить отступ слева (стилевое свойство margin-left) и справа (margin-right) со значением auto. Впрочем, также можно воспользоваться универсальным свойством margin со значением auto (пример 1).
+	</div>
+	<div id="content2">
+		<p>Для колонок с переменной высотой, абсолютное позиционирование не подходит, поэтому давайте рассмотрим другой вариант.</p>
+		<p>Назначив блоку float, мы максимально возможно оттолкнем его к правому (или левому) краю, а следующий за блоком текст, будет обтекать его. Обычно такой прием используется для картинок, но мы будем использовать его для более сложной задачи, поскольку это единственный инструмент, имеющийся в нашем распоряжении.</p>
+	</div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
