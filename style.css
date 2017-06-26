@@ -1,0 +1,8 @@
+#content{
+	position: relative;
+}
+.photo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}

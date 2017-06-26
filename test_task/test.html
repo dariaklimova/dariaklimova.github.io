@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Аккаунт</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="content" id="content">
+	<div class="photo">
+		<img id="photo" src="http://www.espanarusa.com/files/autoupload/52/4/46/chhw3u1b9036.jpg">
+	</div>
+	<div class="main">
+		<p class="name">Вероника Ростова</p>
+		<p class="position">Менеджер по продажам</p>
+	<div class="description">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны
+	</div>
+	</div>
+<div class="services">
+	<table cellspacing="0">
+		<tr>
+			<th class="col1"></th>
+			<th class="col2"><div style="width:75%background-color:#9ED670">Услуг</div></th>
+		</tr>
+		<tr>
+			<td><div><div style="width:260px; height:27px; z-index:1; position: absolute; background-color:#9ED670; border-radius: 2px"></div><div style="position: relative; z-index:2">Ручное бронирование</div></div></td>
+			<td class="col2">11</td>
+		</tr>
+		<tr>
+			<td><div><div style="width:10%; height:27px; z-index:1; position:absolute; background-color:#A4EDE7; border-radius: 2px"></div><div style="position:relative; z-index:2">Пакетные туры</div></div></td>
+			<td class="col2">3</td>
+		</tr>
+		<tr>
+			<td><div><div style="width:5%; height:27px; z-index:1; position:absolute; background-color:#A4EDE7; border-radius: 2px"></div><div style="position:relative; z-index:2">Отели</div></div></td>
+			<td class="col2">1</td>
+		</tr>
+		<tr>
+			<td id="all"><b>Всего</b></td> 
+			<td id="q" class="col2"><b>15</b></td>
+		</tr>
+
+	</table>
+	
+</div>
+</div>
+<div class="footer">
+<input id="comment" type="text" name="comments" value="">
+<button id="mybutton"><b>Написать консультанту</b></button>
+</div>
+
+<script type="text/javascript">
+		
+		var firstButton = document.getElementById("mybutton");
+		
+
+		firstButton.addEventListener("click", clickHandler);
+		function keyDown(e){ // В качестве параметра будем передавать объект event
+/* Если нажата клавиша ctrl, то присваиваем соответствующей переменной значение true*/
+	if(e.keyCode == 17)
+		ctrl = true;
+// Иначе, если пользователь держит нажатой клавишу ctrl и нажимает enter
+else if(e.keyCode == 13 && ctrl)
+// то имитируем щелчок по кнопке с id="go"
+firstButton.onclick();	
+}
+
+		function clickHandler(form){
+				var inPut = document.getElementById("comment");
+				var newComment = document.createElement('div');
+				newComment.innerHTML += inPut.value;
+				content.appendChild(newComment);
+				newComment.style.cssText="background-color: #CEDCF4; \
+    width: 90%; \
+    margin-top: 15px; \
+    margin-bottom: 15px; \
+    margin-right: 10px; \
+    margin-left: 10px;\
+    padding: 10px;\
+    border: 1px groove #DFDFDF; \
+    border-radius: 5px;\
+  ";
+			}
+			
+		function keyDown(e){ // В качестве параметра будем передавать объект event
+/* Если нажата клавиша ctrl, то присваиваем соответствующей переменной значение true*/
+	if(e.keyCode == 17)
+		ctrl = true;
+// Иначе, если пользователь держит нажатой клавишу ctrl и нажимает enter
+else if(e.keyCode == 13 && ctrl)
+// то имитируем щелчок по кнопке с id="go"
+document.getElementById("mybutton").onclick = clickHandler;	
+}
+	</script>
+<!--
+<div id="graph" class="graph horizontal">
+  <div class="item" style="width:10%">Ручное бронирование</div>
+  <div class="item" style="width:25%">Пакетные туры</div>
+  <div class="item" style="width:30%">Отели</div>
+  
+</div>-->
+</body>
+</html>

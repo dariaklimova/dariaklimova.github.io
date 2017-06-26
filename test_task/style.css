@@ -1,0 +1,92 @@
+.content{
+	position: relative;
+	width: 40%;
+	overflow:hidden;
+	 font-family:  Arial;
+	 top: 50%;
+    left: 30%;
+
+	
+}
+.photo {
+	
+	float: left;
+	
+}
+#photo{
+	width: 150px; 
+	height: 150px; /* Ширина и высота */
+    border-radius: 50%; /* Превращаем в круг */
+}
+.name{
+	font-style: inherit;
+	font-weight: bold;
+	font-size: 12pt;
+}
+.position{
+	font-style: inherit;
+	font-size: 10pt;
+	color: #999999;
+
+}
+.description{
+	font-style: inherit;
+	background-color: #FFFEB3;
+	border: 1px solid #999999;
+	margin-bottom: 5px;
+	margin-left: 40px;
+	padding: 10px;
+	line-height: 1.5;
+	font-size: 11pt;
+	
+}
+.services{
+	margin-left: 150px;
+}
+
+.col1{
+	width: 90%;
+	padding-bottom: 5px;
+	height: 30px;	
+	margin-top: 0px;
+	
+}
+.col2{
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	height: 30px;
+	
+}
+th {
+	border-bottom: 1px solid #999999;
+}
+
+#all, #q {
+	border-top: 1px solid #999999;
+}
+#comment{
+	height: 50px;
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 25px;
+
+}
+#mybutton {
+	margin-top: 20px;
+	padding: 10px;
+	height: 40px;
+	width: 300px;
+	background-color: #E5A60D;
+	border-radius: 30px;
+	margin-left: 90px;
+}
+.footer{
+	background-color: #F2F2F2;
+	position: relative;
+	width: 40%;
+	overflow:hidden;
+	 font-family:  Arial;
+	 top: 50%;
+    left: 30%;
+}
